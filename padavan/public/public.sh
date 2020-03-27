@@ -55,7 +55,7 @@ sed -i '/CONFIG_FIRMWARE_INCLUDE_SRELAY/d' .config       # 删除配置项 srela
 ######################################################################
 
 # 科学 2
-echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config  # SS plus+
+echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> .config  # SS plus+
 echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config     # SS server
 
 #  代理
@@ -69,8 +69,8 @@ echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config       # adbyby plus+
 
 # DNS 有关
 echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config # DNS-FORWARDER
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config     # smartdns
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=y" >> .config  # smartdns二进制文件
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config     # smartdns
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=n" >> .config  # smartdns二进制文件
 
 # 其他
 
